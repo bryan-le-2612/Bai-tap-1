@@ -9,6 +9,6 @@ test('has title', async ({ page }) => {
 
 test('get started link', async ({ page }) => {
   await page.goto('https://material.playwrightvn.com/');
-  await page.getByRole('link', { name: 'Bài học 1: Register Page' }).click();
-  await expect(page.getByRole('heading', { name: 'User Registration' })).toBeVisible();
+  await page.getByRole('link', { name: 'Tìm hiểu thêm' }).click();
+  await expect(page).toHaveURL('https://www.facebook.com/groups/playwright.automation.test');
 });
